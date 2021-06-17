@@ -12,6 +12,7 @@ function Airplane(name) {
     this.name = name;
     this.isFlying = false;
   }
+  // using prototype to create unique methods that can recalled later 
   Airplane.prototype.takeOff = function () {
     this.isFlying = true;
   };
@@ -44,7 +45,7 @@ function Airplane(name) {
     this.age = age; 
     this.stomach = []; 
   }
- 
+ // unique methods called instancese 
 Person.prototype.eat = function(edible) { 
   if(this.stomach.length <= 10) {
     this.stomach.push(edible); 
@@ -82,9 +83,16 @@ Person.prototype.eat = function(edible) {
       - STRETCH: A car which runs out of `fuel` while driving can't drive any more distance:
           + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
   */
-  
- function Car() {
+  // intialize means passes parameters 
+// all instances means functions  being called later 
+
+
+
+ function Car(model, milesPerGallon) {
+    this.tank = 0; 
+    this.odometer = 0; 
     
+
   }
   
   
